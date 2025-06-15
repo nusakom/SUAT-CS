@@ -1,0 +1,120 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 定义渐变和阴影 -->
+  <defs>
+    <linearGradient id="dataGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="algoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="3" dy="3" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+     refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555" />
+    </marker>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- 标题 -->
+  <text x="400" y="40" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" 
+        font-size="24" font-weight="bold" fill="#2c3e50">数据结构 × 算法：相辅相成</text>
+  
+  <!-- 左侧：数据结构 -->
+  <circle cx="200" cy="250" r="80" fill="url(#dataGrad)" filter="url(#shadow)"/>
+  <text x="200" y="240" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" 
+        font-size="16" font-weight="bold" fill="white">数据结构</text>
+  <text x="200" y="260" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" 
+        font-size="12" fill="white">Data Structure</text>
+  
+  <!-- 右侧：算法 -->
+  <circle cx="600" cy="250" r="80" fill="url(#algoGrad)" filter="url(#shadow)"/>
+  <text x="600" y="240" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" 
+        font-size="16" font-weight="bold" fill="white">算法</text>
+  <text x="600" y="260" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" 
+        font-size="12" fill="white">Algorithm</text>
+  
+  <!-- 中心：协同效应 -->
+  <circle cx="400" cy="250" r="60" fill="url(#centerGrad)" filter="url(#shadow)"/>
+  <text x="400" y="245" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" 
+        font-size="14" font-weight="bold" fill="white">协同</text>
+  <text x="400" y="260" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" 
+        font-size="14" font-weight="bold" fill="white">效应</text>
+  
+  <!-- 连接箭头 -->
+  <line x1="280" y1="250" x2="340" y2="250" stroke="#555" stroke-width="3" 
+        marker-end="url(#arrowhead)"/>
+  <line x1="460" y1="250" x2="520" y2="250" stroke="#555" stroke-width="3" 
+        marker-end="url(#arrowhead)"/>
+  <line x1="360" y1="215" x2="320" y2="185" stroke="#555" stroke-width="2" 
+        marker-end="url(#arrowhead)"/>
+  <line x1="440" y1="215" x2="480" y2="185" stroke="#555" stroke-width="2" 
+        marker-end="url(#arrowhead)"/>
+  
+  <!-- 数据结构特性 -->
+  <rect x="50" y="350" width="300" height="120" rx="10" fill="#e8f2ff" stroke="#4a90e2" stroke-width="2"/>
+  <text x="200" y="375" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" 
+        font-size="14" font-weight="bold" fill="#2c3e50">数据结构提供：</text>
+  <text x="70" y="400" font-family="Microsoft YaHei, Arial, sans-serif" 
+        font-size="12" fill="#34495e">• 数据的组织方式和存储逻辑</text>
+  <text x="70" y="420" font-family="Microsoft YaHei, Arial, sans-serif" 
+        font-size="12" fill="#34495e">• 基本操作接口（增删改查）</text>
+  <text x="70" y="440" font-family="Microsoft YaHei, Arial, sans-serif" 
+        font-size="12" fill="#34495e">• 算法实现的基础平台</text>
+  <text x="70" y="460" font-family="Microsoft YaHei, Arial, sans-serif" 
+        font-size="12" fill="#34495e">• 性能优化的关键因素</text>
+  
+  <!-- 算法特性 -->
+  <rect x="450" y="350" width="300" height="120" rx="10" fill="#fff0f5" stroke="#e74c3c" stroke-width="2"/>
+  <text x="600" y="375" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" 
+        font-size="14" font-weight="bold" fill="#2c3e50">算法实现：</text>
+  <text x="470" y="400" font-family="Microsoft YaHei, Arial, sans-serif" 
+        font-size="12" fill="#34495e">• 问题求解的具体步骤</text>
+  <text x="470" y="420" font-family="Microsoft YaHei, Arial, sans-serif" 
+        font-size="12" fill="#34495e">• 数据结构操作的逻辑组合</text>
+  <text x="470" y="440" font-family="Microsoft YaHei, Arial, sans-serif" 
+        font-size="12" fill="#34495e">• 时间和空间复杂度优化</text>
+  <text x="470" y="460" font-family="Microsoft YaHei, Arial, sans-serif" 
+        font-size="12" fill="#34495e">• 实际应用价值的体现</text>
+  
+  <!-- 协同效应说明 -->
+  <rect x="250" y="490" width="300" height="80" rx="10" fill="#f0fff0" stroke="#27ae60" stroke-width="2"/>
+  <text x="400" y="515" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" 
+        font-size="14" font-weight="bold" fill="#2c3e50">协同效应：</text>
+  <text x="270" y="535" font-family="Microsoft YaHei, Arial, sans-serif" 
+        font-size="12" fill="#34495e">• 合适的数据结构显著提升算法效率</text>
+  <text x="270" y="555" font-family="Microsoft YaHei, Arial, sans-serif" 
+        font-size="12" fill="#34495e">• 优秀的算法充分发挥结构优势</text>
+  
+  <!-- 实例箭头指向 -->
+  <text x="400" y="100" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" 
+        font-size="14" fill="#7f8c8d">经典组合实例</text>
+  
+  <!-- 实例展示 -->
+  <g transform="translate(100, 120)">
+    <rect x="0" y="0" width="140" height="40" rx="5" fill="#3498db" opacity="0.8"/>
+    <text x="70" y="25" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" 
+          font-size="11" fill="white">哈希表 + 查找算法</text>
+  </g>
+  
+  <g transform="translate(280, 120)">
+    <rect x="0" y="0" width="140" height="40" rx="5" fill="#e67e22" opacity="0.8"/>
+    <text x="70" y="25" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" 
+          font-size="11" fill="white">二叉树 + 搜索算法</text>
+  </g>
+  
+  <g transform="translate(460, 120)">
+    <rect x="0" y="0" width="140" height="40" rx="5" fill="#9b59b6" opacity="0.8"/>
+    <text x="70" y="25" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" 
+          font-size="11" fill="white">图结构 + 路径算法</text>
+  </g>
+</svg>
